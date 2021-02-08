@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo docker build --no-cache -t ${DOCKER_WEBDAV_IMAGE} .
-
+docker build --no-cache -t lexpredict/nginx-webdav:latest .
+docker image tag lexpredict/nginx-webdav:latest lexpredict/nginx-webdav:1.19.6
